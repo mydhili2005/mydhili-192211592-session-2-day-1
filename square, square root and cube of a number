@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int number;
+    printf("Enter a number : ");
+    scanf("%d", &number);
+
+    printf("Square of %d is %d\n", number, (number * number));
+    printf("square root of %d is %d\n",number,(number*1/2));
+    printf("Cube of %d is %d\n", number, (number * number * number));
+}
+
