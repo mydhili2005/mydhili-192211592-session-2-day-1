@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int p, q, digit;
+    
+    printf("Enter the starting number: ");
+    scanf("%d", &p);
+    
+    printf("Enter the ending number: ");
+    scanf("%d", &q);
+    
+    printf("Enter the digit to exclude: ");
+    scanf("%d", &digit);
+    
+    printf("Numbers from %d to %d excluding %d:\n", p, q, digit);
+    
+    for(int i=p; i<=q; i++) {
+        int temp = i;
+        while(temp != 0) {
+            int rem = temp % 10;
+            if(rem == digit) {
+                goto skip;
+            }
+            temp /= 10;
+        }
+        
+printf("%d ", i);
+        skip:
+        continue;
+    }
+    
+    printf("\n");
+    return 0;
+}
