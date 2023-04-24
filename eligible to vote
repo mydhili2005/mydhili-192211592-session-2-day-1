@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+  int vote_age;
+
+  printf("enter the age of the person : \n");
+  scanf("%d",&vote_age);
+  if (vote_age<18)
+     {
+       printf(" Not eligible to vote.\n");
+       printf("you can caste your vote after %d year.\n",18-vote_age);
+     }
+  else
+     printf("Eligible to vote.\n");
+     
+}
